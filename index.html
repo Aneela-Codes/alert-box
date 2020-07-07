@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom popup by Using JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alert.css">
+</head>
+<body>
+    <a onclick="pop()" class="button">Show Box</a>
+
+
+    <div id="box">
+        <span class="fas fa-check-circle"></span>
+        <h1>Good Job!</h1>
+        <a onclick="pop()" class="close">Close</a>
+    </div>
+
+    <script>
+        var c=0;
+        function pop(){
+    if(c==0){
+    document.getElementById("box").style.display="block";
+    c=1;
+    }
+    else{
+    document.getElementById("box").style.display="none";
+    c=0;
+}
+}
+    </script>
+</body>
+</html>
